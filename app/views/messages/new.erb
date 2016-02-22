@@ -10,8 +10,12 @@
 <% end %>
 <form method="post" action="/messages">
   <div>
-    <label>Author</label>
+    <label>Author:</label>
     <input type="text" name="author" value="<%= @message.author %>">
+  </div>
+  <div>
+    <label>URL:</label>
+    <input type="text" name="url" value="<%= @message.url %>">
   </div>
   <div>
     <label>Content:</label>
